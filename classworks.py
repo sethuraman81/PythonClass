@@ -1,3 +1,75 @@
+
+
+
+
+"""
+
+a = 3
+if a in (3, 4, 6):
+    print("Yes")
+else:
+    print("No")
+
+a="Hello"
+b=a
+print (id(a))
+print (id(b))
+if a is b:
+    print("Same ID's")
+
+a = 3
+if a == 3 or a == 4 or a == 6:
+    print("Yes")
+else:
+    print("No")
+
+
+print(1 or 2) #1
+print(0 or 2) #2
+print(None or 5) #5
+print(False or 6 ) #6
+print(True or False) #True
+print(False or True) #True
+
+print([] or True) #True
+print([] or 0 or {}) #{}
+print([] or "ABC" or {22})
+
+print(None or None  )
+
+print(0 or {} or [])
+
+print(0 or (10-10) or "BB")
+
+def testfun():
+    print("Hello There")
+    #return None
+
+a = 3 and testfun() and 6
+print(a)
+
+
+a = " " and "Linda" and " " and None and []
+print(a)
+
+a= 5 and 1 and 2
+print(a)
+
+
+if True:
+    print("it prints")
+else:
+    print("it does not print")
+
+if False:
+    print("it prints")
+else:
+    print("it DOES print")
+"""
+
+
+
+
 def func1():
     a = "abc"
     print(id(a))

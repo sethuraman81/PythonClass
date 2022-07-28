@@ -1,9 +1,5 @@
-if True:
-    print("it prints")
-else:
-    print("it does not print")
+import datetime
+a=None
+a = a or datetime.datetime.now()
+print(a)
 
-if False:
-    print("it prints")
-else:
-    print("it DOES print")
