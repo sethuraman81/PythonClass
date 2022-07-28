@@ -1,1 +1,9 @@
-print(1 and 2 and 3 and 4)
+if True:
+    print("it prints")
+else:
+    print("it does not print")
+
+if False:
+    print("it prints")
+else:
+    print("it DOES print")
