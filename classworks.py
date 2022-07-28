@@ -18,8 +18,6 @@ def func1():
     if (a is not c):
         print("Same memory location")
 
-
-
 #############
 def foo():
     return ""
