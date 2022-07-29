@@ -17,3 +17,25 @@ Enter a number: 7
 4) A lot of cell phones have tip calculators. Write one. Ask the user for the price of the meal and
 the percent tip they want to leave. Then print both the tip amount and the total bill with the
 tip included."""
+
+"""1"""
+celsius = float(input("Enter the Temperature:"))
+fahrenheit = (celsius * 9 / 5) + 32
+print('The %.2f degree Celsius is equal to: %.2f Fahrenheit' % (celsius, fahrenheit))
+
+"""2"""
+
+number = int(input("Enter a Number:"))
+square = number ** 2
+print('The square of %d is %d' % (number , square))
+
+"""3"""
+x = int(input("Enter a Number:"))
+print(x, x*2, x*3, x*4, x*5, sep="---")
+
+"""4"""
+
+Bill = float(input("Enter the Bill Amount"))
+Tip1 = int(input("Enter the Tips"))
+Tip2 = (Bill * Tip1/100) + Bill
+print('The %.2f is Bill Amount  %d is Tip Amount amd %d is Total Amount  ' % (Bill, Tip1, Tip2))
