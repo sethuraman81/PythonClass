@@ -40,4 +40,3 @@ Tip1 = int(input("Enter the Tips"))
 Tip2 = (Bill * Tip1/100) + Bill
 print('The %.2f is Bill Amount  %d is Tip Amount amd %d is Total Amount  ' % (Bill, Tip1, Tip2))
 
-'home work'
