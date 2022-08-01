@@ -5,4 +5,4 @@
 
 Celcs = int(input("Enter the value for Celcious: "))
 Faht = (Celcs * (9/5) + 32)
-print("Celcious Value given is {0}" .format(Celcs) + " \n Fahranheat value is {0}" .format(Faht))
+print("Celcious Value given is {0}, \n equal Fahranheat value is {1}" .format(Celcs,Faht))
