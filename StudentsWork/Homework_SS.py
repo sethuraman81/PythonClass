@@ -33,12 +33,27 @@ print('The square of %d is %d' % (number , square))
 x = int(input("Enter a Number:"))
 print(x, x*2, x*3, x*4, x*5, sep="---")
 
+
+
 """4"""
 
 Bill = float(input("Enter the Bill Amount"))
 Tip1 = int(input("Enter the Tips"))
 Tip2 = (Bill * Tip1/100) + Bill
 print('The %.2f is Bill Amount  %d is Tip Amount amd %d is Total Amount  ' % (Bill, Tip1, Tip2))
+
+"""palindrome"""
+palindrome = int(input("Enter the Maximum Value:"))
+print("palindrome numbers 1 and %d are:"% palindrome)
+for num in range(1, palindrome + 1):
+    temp = num
+    reverse = 0
+    while(temp > 0):
+        reminder = temp % 10
+        reverse=(reverse * 10)+reminder
+        temp = temp//10
+    if(num == reverse):
+        print("%d"%num,end=' ')
 
 
 
