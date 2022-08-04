@@ -1,2 +1,18 @@
-"Try adding with new Account"
-Make another change
+Homework 2
+Palindrome for numbers
+
+Homework - 3
+get number input from user -56
+binary value -- 0011 1000
+target - 00011100
+output -- 28
+
+
+Homework - 4
+Write a multiple argument function definition
+which take integers and prints all of them
+with a separator ="$$$"
+
+leetcode
+geeks for geeks
+easy -- Medium
