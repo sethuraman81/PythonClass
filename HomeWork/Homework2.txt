@@ -16,3 +16,11 @@ with a separator ="$$$"
 leetcode
 geeks for geeks
 easy -- Medium
+
+Homework 5
+Given a list [20,30,40,50,60,70,80,90,100]
+given a number 60
+find all combinations possible to generate the number
+33 - Not possible
+110
+(0,7) - (20,90) - 110
