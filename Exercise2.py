@@ -1,5 +1,5 @@
 """
-Exercises given by Manoj sir in the class
+Exercises given by Manoj sir in  the class
 """
 
 def pr(a,b):
