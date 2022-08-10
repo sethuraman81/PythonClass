@@ -19,30 +19,30 @@ the percent tip they want to leave. Then print both the tip amount and the total
 tip included."""
 
 """1"""
-celsius = float(input("Enter the Temperature:"))
+"""celsius = float(input("Enter the Temperature:"))
 fahrenheit = (celsius * 9 / 5) + 32
 print('The %.2f degree Celsius is equal to: %.2f Fahrenheit' % (celsius, fahrenheit))
 
-"""2"""
+
 
 number = int(input("Enter a Number:"))
 square = number ** 2
 print('The square of %d is %d' % (number , square))
 
-"""3"""
+
 x = int(input("Enter a Number:"))
 print(x, x*2, x*3, x*4, x*5, sep="---")
 
 
 
-"""4"""
+
 
 Bill = float(input("Enter the Bill Amount"))
 Tip1 = int(input("Enter the Tips"))
 Tip2 = (Bill * Tip1/100) + Bill
 print('The %.2f is Bill Amount  %d is Tip Amount amd %d is Total Amount  ' % (Bill, Tip1, Tip2))
 
-"""palindrome"""
+
 palindrome = int(input("Enter the Maximum Value:"))
 print("palindrome numbers 1 and %d are:"% palindrome)
 for num in range(1, palindrome + 1):
@@ -53,7 +53,33 @@ for num in range(1, palindrome + 1):
         reverse=(reverse * 10)+reminder
         temp = temp//10
     if(num == reverse):
-        print("%d"%num,end=' ')
+        print("%d"%num,end=' ')"""
+
+
+
+"""list Method"""
+"""append"""
+List = ['sasi','python','class']
+print(List)
+List.append('work')
+print(List)
+"""clear"""
+list=['sasi','python','class']
+print(list)
+list.clear()
+print(list)
+
+"""copy"""
+lst=['python','list','append']
+lst1=lst.copy()
+lst1.append("copy")
+print(lst)
+print(lst1)
+"""count"""
+lst2=['python','list','append']
+
+print(lst2.count("python"))
+print(lst2.count(" "))
 
 
 
