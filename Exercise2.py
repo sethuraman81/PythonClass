@@ -12,8 +12,8 @@ def problem4():###
         return l
     mylist = [7,11,13,17,19,21]
     mystery(mylist)
-    #pr(mylist,'mylist')
-
+    pr(mylist,'mylist')
+problem4()
 
 def problem5():
     def h(x):
@@ -58,7 +58,7 @@ def problem3(): #8a
     startmsg="anaconda"
     endmsg=""
     for i in range(1,1+len(startmsg)):
-        endmsg = endmsg + startmsg[-1]
+        endmsg = endmsg + startmsg[-i]
     print(endmsg)
 
 
@@ -76,6 +76,10 @@ def problem2():#3
     print(b[3]) #73
     print(c[3]) #73
     print(d[1])#95
+    print("#####")
+    for i in range (1,9):
+        print(i)
+
 
 def Problem1():#st7
     x=[[3,5],"mismy",2,"borgrove",1] #statement1
@@ -84,7 +88,10 @@ def Problem1():#st7
     w=x
     x[1]=x[1][:5] + 'ery'
     y[1]=4
-    w[1][:3]='fea' ####
+    a12=w[1][:3]
+    a12 +='fea' ####
+    pr(a12,'a12')
     z[4]=42
     x[0][0]=555
     a=(x[3][1] == 1)
+
