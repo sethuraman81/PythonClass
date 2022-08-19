@@ -83,62 +83,6 @@ print(lst2.count(" "))
 
 
 
-"""extend """
-list = ['sasi','python']
-print(list)
-list.extend(['developer','datascience'])
-print(list)
-
-"""index"""
-A = ['sasi','python','developer','datascience']
-print(A.index('developer'))
-print(A.index('developer',0))
-
-"""insert"""
-
-list1 = ['sasi','python']
-print(list1)
-list1.insert(0,'python')
-print(list1)
-list1.insert(3,'developer')
-print(list1)
-
-
-"""pop"""
-list2 =  ['sasi','python','developer','datascience']
-print(list2)
-list2.pop()
-print(list2)
-list2.pop(2) #with index
-print(list2)
-
-
-"""remove"""
-list3 =  ['sasi','python','developer','datascience']
-print(list3)
-list3.remove('sasi')
-print(list3)
-
-"""reverse"""
-list4 = ['sasi','python','developer','datascience']
-print(list3)
-list4.reverse()
-print(list4)
-
-"""sort"""
-list5 = [10,5,9,3,4,8,6,7,1,2]
-print(list5)
-list5.sort()
-list5.sort(reverse=False)
-print(list5)
-list5.sort(reverse=True)
-print(list5)
-
-
-
-
-
-
 
 
 
