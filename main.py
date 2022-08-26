@@ -54,3 +54,39 @@ print(type(st))
 a= (frozenset(), 1)
 print(hash(a))
 
+
+
+tuple1 = (1, 2, 3, )
+
+print (hash(tuple1))
+tuple2 = (1, 2, 3, )
+print (hash(tuple2))
+print(tuple1.__eq__(tuple2))
+print("----***")
+print(id(tuple1))
+print(id(tuple2))
+
+
+
+
+colors = "red", "green", "blue"
+ab=tuple(reversed(colors))
+print(ab)
+
+one_member_tuple = 'Only member'
+print(type(one_member_tuple))
+
+first,last, *more = (1,2)
+print(first)
+#print(last)
+print(*more)
+a,b,c=1,2,3
+print(a,b,c)
+
+t1= list(range(4))
+t2= list(range(10))
+a = [t1,t2]
+print(a)
+b=a[::2]
+print(b)
+#list[ start : stop: step]
