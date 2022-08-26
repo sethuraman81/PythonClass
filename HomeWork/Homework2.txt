@@ -24,3 +24,18 @@ find all combinations possible to generate the number
 33 - Not possible
 110
 (0,7) - (20,90) - 110
+
+
+Homework 6
+Create a basic class and use the class by creating an object
+use constructors and destructors within it
+
+Homework 7 (Do not repeat yourself)
+try one level of inheritance
+create a base class
+derive the base class in to a new sub class
+define constructors, destructors, ( for both the parent and sub class)
+create a custom function,
+over ride equalto function -- based on custom function result
+
+create 5 objects 2 of the base class and 3 of type sub class
