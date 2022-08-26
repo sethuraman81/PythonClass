@@ -1,5 +1,135 @@
 """
 
+
+
+from abc import ABC, abstractmethod
+
+class Garages:
+ newlist=[]
+ def __init__(self):
+  self.cars=[] #constructor
+  self.cars1=[]
+  self.tup=(1,2,3)
+
+ def __hash__(self):
+  return hash(self.tup)
+ def __len__(self):
+  return len(self.cars)
+ def __getitem__(self, item):
+  return self.cars1[item]
+ def __repr__(self):
+  return f'<Garage {self.cars}>'
+
+
+#Gurukulam --abstract
+#electrical
+#Welding
+
+
+Garages.newlist.append('AllCars')
+Garages.newlist.append('Fiat')
+Garages.newlist.append('Maruti')
+
+ford=Garages() #constructor --list create--cars
+mercedes=Garages() #constructor --list create--cars
+
+ford.cars.append('Fiesta')
+ford.cars.append('Focus')
+ford.cars1.append('F12')
+ford.cars1.append('Foc12')
+
+
+mercedes.cars.append('A class')
+mercedes.cars.append('S class')
+
+
+for i in ford:
+ print(i)
+ print(ford.newlist)
+
+
+
+for i in mercedes:
+ print(i)
+ print(ford.newlist)
+
+ for i in Garages.newlist:
+  print(i)
+
+
+
+
+def fun(item):
+    if item!='python':
+        return item
+
+lst2=['python','list','append','python']
+
+for i in range(0,len(lst2)):
+    lst2[i] = ''
+
+print(lst2)
+print(len(lst2))
+
+
+ab = list(filter(fun,lst2))
+print(ab)
+print(len(ab))
+
+#pop -- last and by index
+#lambda functions -- one line conditions
+#simple for loop
+#clear
+#del
+#remove
+#filter
+
+
+
+Binary to decimal conversion Classwork
+def convertnumbertoBin(a):
+
+    print(a)
+    bstr=bin(a)
+    print(bstr)
+    bstr = bstr[2:]
+    bstr= bstr.zfill(8)
+    print(bstr)
+    bstr = bstr[::-1]
+    print(bstr)
+    ab= int(bstr,2)
+    print(ab)
+
+convertnumbertoBin(56)
+
+palindrome = int(input("Enter the Maximum Value:"))
+print("palindrome numbers 1 and %d are:"% palindrome)
+for num in range(1, palindrome + 1):
+    temp = num
+    reverse = 0
+    while(temp > 0): #1000
+        reminder = temp % 10 #
+        reverse=(reverse * 10)+reminder #99
+        temp = temp//10 #0
+    if(num == reverse):
+        print("%d"%num,end=' ')
+
+"""
+
+"""
+def funct (*a,sep="$$$"):
+    for idx,i in enumerate(a):
+        print (i, end='')
+        if(idx+1 < len(a)):
+            print(sep,end='')
+
+funct(20,30,40,sep="---")
+
+"""
+
+
+"""
+
 def foo(m): #5
     if m ==0:
         return(0)
@@ -22,7 +152,25 @@ n*(n+1)/2
 
 
 
+"""
 
+
+def add(*a,str):
+    print (f"value a = {a}\n value of str = {str}")
+    #print(sum(a))
+    #
+
+add(20,20,30,40,"example",str="Keyword argument")
+
+def func(*,a,b,c):
+    print (a,b,c)
+    print("all keyword parameters")
+
+func(a=20,b=30,c=50)
+
+
+
+"""
 
 
 

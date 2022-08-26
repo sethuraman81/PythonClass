@@ -1,16 +1,56 @@
-def mult(*a):
- for i in a:
-  c=c*i
 
-#Kw pair
-#lambda
-#Classes - Objects
-#selenium
+class Student:
+ def __init__(self,name,school):
+  self.name=name
+  self.school = school
+  self.marks = []
 
-def add(v1, *, v2,v3=0):
-    print('arg1: ', v2)
-    print('arg2: ', v3)
+ def average(self):
+  return sum(self.marks)/len(self.marks)
 
-add(35,v2=45,v3=56)
+ def __eq__(self,tempst):
+  print("Self Average = ",self.average())
+  print("Param Average = ", tempst.average())
+  return self.average() == tempst.average()
 
-print("Calling add function " ,add(3,v2=4))
+class WorkingStudent(Student):
+ def __init__(self,name,school,salary):
+  super().__init__(name,school)
+  self.salary = salary
+
+stu1 = Student('Arun','National')
+stu1.marks.append(50)
+stu1.marks.append(60)
+stu1.marks.append(70)
+
+stu2 = Student('Sasi','BAM')
+stu2.marks.append(60)
+stu2.marks.append(70)
+stu2.marks.append(80)
+
+stu3 = WorkingStudent('Manoj','Hindustan',3000)
+stu3.marks.append(60)
+stu3.marks.append(70)
+stu3.marks.append(80)
+
+print( stu2.__eq__(stu1))
+print("++++")
+
+
+a,*b,c=(1,2,3,4,5,6,7,78,88,97,34)
+print(*b)
+first, *more, last = (1, 2, 3, 4, 5, 6)
+print (first)
+print(more)
+print(*more)
+print (last)
+
+a=(1,2,3,4,5,6)
+b=(1,2,3,4,5,6)
+print(a.__eq__(b))
+
+st = {'hello'}
+print(type(st))
+a= (frozenset(), 1)
+print(hash(a))
+
