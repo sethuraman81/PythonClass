@@ -1,6 +1,70 @@
 """
 
 
+
+
+a = {'A', 'B', 'C'}
+b= {10,20,30,'A'}
+c={3,4,5}
+
+print(a.union(b).union(c))
+print(a|b|c)
+
+print(a)
+a.update(b)
+a.update(c)
+print(a)
+
+
+#construction -- constructor
+#destruction -- destructor
+#protection
+class Job:
+ def __init__(self):
+  print("Job Constructor")
+
+class Teaching:
+ def __init__(self):
+  print("Teaching Constructor")
+
+class Student:
+ def __init__(self,name,college,marks):
+  print("Student Constructor")
+  self.name = name
+  self.college=college
+  self.marks=marks
+
+ def __repr__(self):
+  return self.name + "--" + self.college + "--"+ f"{self.average()}"
+
+ def __del__(self):
+  print("Class destructor called")
+
+
+ def average(self):
+  return sum(self.marks) / len(self.marks)
+
+class WorkingStudent(Student):
+ def __ge__(self, other):
+  return self.salary >= other.salary
+
+ def __init__(self,name,college,marks,salary):
+  super().__init__(name,college,marks)
+  #super(Student, self).__init__(name,college,marks)
+  #super(Job, self).__init__()
+  #super(Teaching, self).__init__()
+  self.salary = salary
+
+
+
+a = WorkingStudent("Student1", "LoyolaCollege", [30, 40, 50],2000)
+b = WorkingStudent("Student1", "LoyolaCollege", [30, 40, 50],3000)
+c = WorkingStudent("Student1", "LoyolaCollege", [30, 40, 50],4000)
+print(a)
+
+if(b>=a) :
+  print ("B has more salary")
+
 class Student:
  def __init__(self,name,school):
   self.name=name
